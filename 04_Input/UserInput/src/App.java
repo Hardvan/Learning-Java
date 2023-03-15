@@ -24,9 +24,16 @@ public class App {
 
         // Getting a string
         System.out.println("Enter a string: ");
-        String str = sc.next();
+        String str = sc.next(); // Reads only one word
 
         System.out.println("You entered: " + str);
+
+        // Consume \n from previous input
+        sc.nextLine();
+
+        // Getting a line
+        System.out.println("Enter a line: ");
+        String line = sc.nextLine(); // Reads the whole line
 
         // Closing the scanner
         sc.close();
