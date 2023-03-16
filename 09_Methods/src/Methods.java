@@ -1,5 +1,8 @@
 public class Methods {
 
+    // ? DRY
+    // * Don't Repeat Yourself
+
     // ? Static keyword
     // * Static keyword is used to associate a method of a given class with the
     // * class itself rather than the object.
