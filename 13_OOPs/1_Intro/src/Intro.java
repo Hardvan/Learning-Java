@@ -8,8 +8,8 @@
 // Memory is allocated only after object instantiation
 
 // ? Components of a class
-// * Attributes
-// * Methods
+// * Attributes (Properties)
+// * Methods (Behaviour)
 
 // ? OOPs Terminology
 // ? 1. Abstraction
