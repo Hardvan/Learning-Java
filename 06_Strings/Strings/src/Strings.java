@@ -63,5 +63,26 @@ public class Strings {
         boolean ends = str.endsWith("van");
         System.out.printf("Ends with: %b%n", ends);
 
+        // * charAt
+        char ch = str.charAt(2);
+        System.out.printf("Char at: %c%n", ch);
+
+        // * indexOf
+        int index = str.indexOf("van");
+        System.out.printf("Index of: %d%n", index);
+
+        // * lastIndexOf
+        // Returns the last index of the given character/string
+        int lastIndex = str.lastIndexOf("a");
+        System.out.printf("Last index of: %d%n", lastIndex);
+
+        // * equals
+        boolean eq = str.equals("Hardvan");
+        System.out.printf("Equals: %b%n", eq);
+
+        // * equalsIgnoreCase
+        boolean eqI = str.equalsIgnoreCase("hardvan");
+        System.out.printf("Equals ignore case: %b%n", eqI);
+
     }
 }
