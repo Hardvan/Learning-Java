@@ -12,6 +12,7 @@ class MyEmployee {
     // ? Private variables
     private int id;
     private String name;
+    private int temp; // For testing
 
     // ? Setters and Getters
     public void setId(int id) {
