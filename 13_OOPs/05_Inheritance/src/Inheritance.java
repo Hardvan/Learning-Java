@@ -4,6 +4,9 @@
 
 // ? 'extends' keyword
 
+// ? super
+// * Keyword that refers the immediate parent class
+
 class Base {
 
     int x;
