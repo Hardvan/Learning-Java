@@ -5,6 +5,8 @@
 // * We can't EXTEND multiple abstract classes
 // * But we can IMPLEMENT multiple interfaces.
 
+// Subclass s = new Superclass(); allowed for both abstract class and interface
+
 // Interface
 interface Bicycle {
 
