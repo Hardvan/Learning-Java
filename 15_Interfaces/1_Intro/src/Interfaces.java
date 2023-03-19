@@ -1,20 +1,26 @@
 // ? Interface
-// * In English, point where two systems meet and interact.
-// * In Java, group of related methods with empty bodies.
+// * Group of related methods with empty bodies.
 
 // ? Abstract class vs Interface
-// * We can't extend multiple abstract classes
-// * But we can implement multiple interfaces.
+// * We can't EXTEND multiple abstract classes
+// * But we can IMPLEMENT multiple interfaces.
 
-// ? Interface
+// Interface
 interface Bicycle {
+
+    int a = 10; // You can create properties in interface, but not modify them (final)
+
     void applyBrake(int decrement);
 
     void speedUp(int increment);
 }
 
-// ? implements keyword
-class Hero implements Bicycle {
+interface Horn {
+    void blowHorn();
+}
+
+// implements keyword
+class Hero implements Bicycle, Horn {
 
     int speed = 0; // Initial speed
 
@@ -28,7 +34,12 @@ class Hero implements Bicycle {
         speed += increment;
     }
 
-    void printStates() {
+    @Override
+    public void blowHorn() {
+        System.out.println("Pee Pee Poo Poo Dhaichuu!");
+    }
+
+    void printSpeed() {
         System.out.println("Speed: " + speed);
     }
 }
@@ -37,9 +48,14 @@ public class Interfaces {
     public static void main(String[] args) {
 
         Hero h = new Hero();
+
+        System.out.println("a: " + h.a);
+        // h.a = 100; // Error because a is final
+
         h.speedUp(10);
         h.applyBrake(5);
-        h.printStates(); // Speed: 5
+        h.printSpeed();
+        h.blowHorn();
 
     }
 }

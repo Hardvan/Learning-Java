@@ -13,6 +13,8 @@
 // Abstract Class
 abstract class Parent {
 
+    int a = 100; // You can create properties in abstract class
+
     public Parent() {
         System.out.println("I am a constructor of Parent class");
     }
@@ -45,12 +47,13 @@ abstract class Child2 extends Parent {
 public class Abstract {
     public static void main(String[] args) {
 
-        Parent p = new Parent(); // Error because Parent is abstract class
+        // Parent p = new Parent(); // Error because Parent is abstract class
 
         Child c = new Child();
         c.greet(); // Good Morning
+        System.out.println(c.a);
 
-        Child2 c2 = new Child2(); // Error because Child2 is abstract class
+        // Child2 c2 = new Child2(); // Error because Child2 is abstract class
 
     }
 }
