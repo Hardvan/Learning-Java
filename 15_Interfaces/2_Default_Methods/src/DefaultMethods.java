@@ -76,7 +76,7 @@ public class DefaultMethods {
             System.out.println(item);
 
         sp.record4KVideo();
-        sp.greet(); // Private method cannot be called from outside the interface
+        // sp.greet(); // Private method cannot be called from outside the interface
 
     }
 }
