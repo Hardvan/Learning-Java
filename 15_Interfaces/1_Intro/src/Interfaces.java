@@ -12,6 +12,7 @@ interface Bicycle {
 
     int a = 10; // You can create properties in interface, but not modify them (final)
 
+    // Interface methods are public by default
     void applyBrake(int decrement);
 
     void speedUp(int increment);
@@ -25,6 +26,7 @@ interface Horn {
 class Hero implements Bicycle, Horn {
 
     int speed = 0; // Initial speed
+    int a = 20; // Modifying a is allowed in subclass
 
     @Override
     public void applyBrake(int decrement) {
