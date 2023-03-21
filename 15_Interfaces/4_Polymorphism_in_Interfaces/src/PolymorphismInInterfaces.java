@@ -1,6 +1,3 @@
-// ? Default Methods
-// * Enable us to add new functionality to existing interfaces
-// * Without breaking the existing code
 
 interface Camera {
 
@@ -8,17 +5,14 @@ interface Camera {
 
     void recordVideo();
 
-    // Private Method (Cannot be called from outside the interface)
-    private void greet() { // Usefull for code reusability in default methods
+    private void greet() {
         System.out.println("Good Morning");
     }
 
-    // ? Default Method
     default void record4KVideo() {
         greet();
         System.out.println("Recording in 4K...");
     }
-
 }
 
 interface WiFi {
@@ -37,7 +31,6 @@ class CellPhone {
     void pickCall() {
         System.out.println("Connecting...");
     }
-
 }
 
 class SmartPhone extends CellPhone implements Camera, WiFi {
@@ -63,20 +56,14 @@ class SmartPhone extends CellPhone implements Camera, WiFi {
     public void connectToNetwork(String network) {
         System.out.println("Connecting to " + network);
     }
-
 }
 
-public class DefaultMethods {
+public class PolymorphismInInterfaces {
     public static void main(String[] args) {
 
-        SmartPhone sp = new SmartPhone();
-
-        String[] arr = sp.getNetworks();
-        for (String item : arr)
-            System.out.println(item);
-
-        sp.record4KVideo();
-        // sp.greet(); // Private method cannot be called from outside the interface
+        Camera cam1 = new SmartPhone(); // Can use Camera methods ONLY
+        cam1.record4KVideo(); // Allowed
+        // cam1.getNetworks(); // Not allowed
 
     }
 }
