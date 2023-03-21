@@ -28,5 +28,6 @@ public class access_modifiers {
         // System.out.println(c.a); // error: a has private access in C1
 
     }
-
 }
+
+// Run this using javac and java
