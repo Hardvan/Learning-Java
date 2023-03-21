@@ -9,6 +9,7 @@ class MyThr1 extends Thread {
             // Sleep for 455 ms
             try {
                 Thread.sleep(455); // ? .Thread.sleep()
+
             } catch (InterruptedException e) {
                 System.out.println(e);
             }
@@ -40,6 +41,7 @@ public class ThreadMethods {
         try {
             t1.join(); // ? .join()
             // t1 will finish before t2 starts
+
         } catch (Exception e) {
             System.out.println(e);
         }
