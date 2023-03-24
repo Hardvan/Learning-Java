@@ -4,17 +4,17 @@ public class Input {
     public static void main(String[] args) {
         System.out.println("Getting user input...");
 
-        // Creating a scanner object
+        // ? Creating a scanner object
         Scanner sc = new Scanner(System.in);
 
-        // Getting user input
+        // ? Getting user input
         System.out.println("Enter a number: ");
 
         // Checking if the input is an integer
         boolean isInt = sc.hasNextInt();
         System.out.println(isInt);
 
-        // Getting the input
+        // ? Getting the input
         if (isInt) {
             int number = sc.nextInt();
             System.out.println("You entered: " + number);
@@ -35,7 +35,7 @@ public class Input {
         System.out.println("Enter a line: ");
         String line = sc.nextLine(); // Reads the whole line
 
-        // Closing the scanner
+        // ? Closing the scanner
         sc.close();
 
     }
