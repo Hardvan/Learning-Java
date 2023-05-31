@@ -6,7 +6,7 @@
 package com.company;
 
 /*
-    ? Classs
+    ? Class
     A class is a template for objects.
     It is a collection of variables and methods.
     A class is a blueprint from which individual objects are created.
