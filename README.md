@@ -14,8 +14,11 @@ Once you have Java installed, you can clone this repository to your local machin
 
 ## Running the Code
 
-To run the code in this repository, navigate to the directory containing the code you want to run and use the `javac` command to compile the code. For example:
-`cd Learning-Java/HelloWorld javac HelloWorld.java`
+To run the code in this repository, navigate to the directory containing the code you want to run and use the `javac` command to compile the code.  
+For example:  
+`cd Learning-Java/HelloWorld`  
+`javac HelloWorld.java`
 
-Once the code is compiled, you can use the `java` command to run it. For example:
+Once the code is compiled, you can use the `java` command to run it.  
+For example:  
 `java HelloWorld`
