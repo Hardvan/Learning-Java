@@ -11,8 +11,9 @@
 interface Bicycle {
 
     int a = 10; // You can create properties in interface, but not modify them (final)
+    // Variables are public, static, final by default in interface
 
-    // Interface methods are public by default
+    // Interface methods are public, abstract by default
     void applyBrake(int decrement);
 
     void speedUp(int increment);

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/02_Hello_World" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/03_Structure_of_a_Java_Program" isTestSource="false" packagePrefix="com.company" />
+      <sourceFolder url="file://$MODULE_DIR$/04_Input" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/05_Marks_Percentage_Calculator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/06_Strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/07_Switch_Case" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/08_Arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/09_Methods" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10_Method_Overloading" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11_VarArgs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12_Recursion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/14_Abstract_Class_and_Methods" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/17_Access_Modifiers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/21_JavaDocs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/22_Annotations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/23_Lambda_Expressions_and_Anonymous_Classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/24_Generics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/25_File_Handling" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
