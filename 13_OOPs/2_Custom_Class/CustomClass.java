@@ -33,6 +33,5 @@ public class CustomClass {
 
         // Calling Methods
         emp.printDetails();
-
     }
 }

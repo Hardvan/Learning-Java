@@ -2,10 +2,10 @@
 // * Specifies where the class, method, or field can be accessed
 
 // * Four types
+// * private - within the declared class
+// * protected - within the declared class and subclasses
+// * default - within the declared class and package
 // * public - accessible from anywhere
-// * private - accessible only within the declared class
-// * protected - accessible within the declared class and subclasses
-// * default - accessible within the declared class and package
 
 class MyEmployee {
 

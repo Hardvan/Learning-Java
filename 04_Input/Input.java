@@ -8,13 +8,12 @@ public class Input {
         Scanner sc = new Scanner(System.in);
 
         // ? Getting user input
-        System.out.println("Enter a number: ");
 
-        // Checking if the input is an integer
-        boolean isInt = sc.hasNextInt();
-        System.out.println(isInt);
-
-        // ? Getting the input
+        // Getting an integer
+        System.out.println("=== Reading an integer ===");
+        System.out.print("Enter a number: ");
+        boolean isInt = sc.hasNextInt();// Checking if the input is an integer
+        System.out.println("Is the input an integer? " + isInt);
         if (isInt) {
             int number = sc.nextInt();
             System.out.println("You entered: " + number);
@@ -23,20 +22,21 @@ public class Input {
         }
 
         // Getting a string
-        System.out.println("Enter a string: ");
+        System.out.println("\n=== Reading a string ===");
+        System.out.print("Enter a string: ");
         String str = sc.next(); // Reads only one word
-
         System.out.println("You entered: " + str);
 
         // Consume \n from previous input
         sc.nextLine();
 
         // Getting a line
-        System.out.println("Enter a line: ");
+        System.out.println("\n=== Reading a line ===");
+        System.out.print("Enter a line: ");
         String line = sc.nextLine(); // Reads the whole line
+        System.out.println("You entered: " + line);
 
         // ? Closing the scanner
         sc.close();
-
     }
 }

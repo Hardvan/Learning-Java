@@ -14,6 +14,5 @@ public class SwitchCase {
             default:
                 System.out.println("Hello World");
         }
-
     }
 }

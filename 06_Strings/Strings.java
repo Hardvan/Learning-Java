@@ -15,26 +15,26 @@ public class Strings {
         String a = "Hardvan";
         String b = new String("Hardvan");
         /*
-         * Difference between a and b
+         * Difference between a and b:
          * a is a reference variable
          * b is a object variable
          */
 
         // ? String Methods
         // Strings are immutable
-        String str = "Hardvan";
-        System.out.println(str);
+        String s = "Hardvan";
+        System.out.println("String: " + s);
 
         // * Length
-        int length = str.length();
+        int length = s.length();
         System.out.printf("Length: %d%n", length); // %n is a new line
 
         // * Lowercase
-        String lower = str.toLowerCase();
+        String lower = s.toLowerCase();
         System.out.printf("Lowercase: %s%n", lower);
 
         // * Uppercase
-        String upper = str.toUpperCase();
+        String upper = s.toUpperCase();
         System.out.printf("Uppercase: %s%n", upper);
 
         // * Trim (Removes spaces from both sides)
@@ -42,46 +42,45 @@ public class Strings {
         System.out.printf("Trim: %s%n", trim);
 
         // * Substring
-        // Returns a substring from the given index to the end
-        String sub1 = str.substring(2);
-        String sub2 = str.substring(2, 4);
+        // Returns a substring from [start, end)
+        String sub1 = s.substring(2);
+        String sub2 = s.substring(2, 4);
         System.out.printf("Substring: %s%n", sub1);
         System.out.printf("Substring: %s%n", sub2);
 
         // * Replace
-        String rep = str.replace('a', 'e');
+        String rep = s.replace('a', 'e');
         System.out.printf("Replace: %s%n", rep);
-
-        String rep2 = str.replace("van", "ik");
+        String rep2 = s.replace("van", "ik");
         System.out.printf("Replace: %s%n", rep2);
 
         // * startsWith
-        boolean starts = str.startsWith("Ha");
+        boolean starts = s.startsWith("Ha");
         System.out.printf("Starts with: %b%n", starts);
 
         // * endsWith
-        boolean ends = str.endsWith("van");
+        boolean ends = s.endsWith("van");
         System.out.printf("Ends with: %b%n", ends);
 
         // * charAt
-        char ch = str.charAt(2);
+        char ch = s.charAt(2);
         System.out.printf("Char at: %c%n", ch);
 
         // * indexOf
-        int index = str.indexOf("van");
+        int index = s.indexOf("van");
         System.out.printf("Index of: %d%n", index);
 
         // * lastIndexOf
         // Returns the last index of the given character/string
-        int lastIndex = str.lastIndexOf("a");
+        int lastIndex = s.lastIndexOf("a");
         System.out.printf("Last index of: %d%n", lastIndex);
 
         // * equals
-        boolean eq = str.equals("Hardvan");
+        boolean eq = s.equals("Hardvan");
         System.out.printf("Equals: %b%n", eq);
 
         // * equalsIgnoreCase
-        boolean eqI = str.equalsIgnoreCase("hardvan");
+        boolean eqI = s.equalsIgnoreCase("hardvan");
         System.out.printf("Equals ignore case: %b%n", eqI);
 
     }
