@@ -1,4 +1,3 @@
-
 class NegativeRadiusException extends Exception {
 
     @Override
@@ -22,7 +21,7 @@ public class ThrowVSThrows {
 
     public static double area(double radius) throws NegativeRadiusException {
         if (radius < 0)
-            throw new NegativeRadiusException();
+            throw new NegativeRadiusException(); // ? throw keyword
 
         return Math.PI * radius * radius;
     }
@@ -42,6 +41,5 @@ public class ThrowVSThrows {
         } catch (NegativeRadiusException e) {
             System.out.println(e.getMessage());
         }
-
     }
 }

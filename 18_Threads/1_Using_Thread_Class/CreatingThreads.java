@@ -17,7 +17,7 @@ class MyThread1 extends Thread {
 class MyThread2 extends Thread {
 
     @Override
-    public void run() { // run() is a method of Thread class
+    public void run() {
         while (true) {
             System.out.println("Thread2 is Running.");
             System.out.println("I am sad.");
@@ -35,6 +35,5 @@ public class CreatingThreads {
         // start() is a method of Thread class
         t1.start();
         t2.start();
-
     }
 }

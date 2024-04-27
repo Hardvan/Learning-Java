@@ -1,4 +1,3 @@
-
 class MyThreadRunnable1 implements Runnable {
 
     @Override
@@ -22,7 +21,7 @@ class MyThreadRunnable2 implements Runnable {
 public class RunnableThread {
     public static void main(String[] args) {
 
-        // Bullet & Gun Analogy:
+        // ? Bullet & Gun Analogy:
         // Bullet(runnable) by itself cannot shoot
         // We need a gun(thread) to shoot the bullet(runnable)
 
@@ -34,6 +33,5 @@ public class RunnableThread {
 
         gun1.start();
         gun2.start();
-
     }
 }

@@ -7,7 +7,6 @@ class Phone {
     public void on() {
         System.out.println(("Phone turning on..."));
     }
-
 }
 
 class SmartPhone extends Phone {
@@ -44,7 +43,6 @@ public class DynamicMethodDispatch {
         obj.on(); // Smartphone turning on...
 
         // Only subclass methods don't work
-        // obj.music(); // Error (because hello() is not in Phone class)
-
+        // obj.music(); // Error (because music() is not in Phone class)
     }
 }

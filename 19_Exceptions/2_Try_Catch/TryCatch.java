@@ -1,4 +1,3 @@
-
 public class TryCatch {
     public static void main(String[] args) {
 
@@ -6,7 +5,7 @@ public class TryCatch {
         int b = 0;
         int c;
         try {
-            c = a / b;
+            c = a / b; // Division by zero
             System.out.println(c);
 
         } catch (Exception e) {
@@ -15,6 +14,5 @@ public class TryCatch {
         }
 
         System.out.println("End of program");
-
     }
 }

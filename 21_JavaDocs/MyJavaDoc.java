@@ -20,13 +20,12 @@ public class MyJavaDoc {
      * @throws ArithmeticException
      * @deprecated This method is deprecated. Use + operator instead.
      */
+    @Deprecated
     static int add(int a, int b) {
         return a + b;
     }
 
     public static void main(String[] args) {
-
         System.out.println("Hello, World!");
-
     }
 }

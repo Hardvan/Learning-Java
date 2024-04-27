@@ -1,6 +1,7 @@
 
 // ? 1) Create a class Circle and use inheritance to create another class Cylinder from it.
 class Circle {
+
     public double radius;
 
     public Circle(double radius) {
@@ -13,6 +14,7 @@ class Circle {
 }
 
 class Cylinder extends Circle {
+
     public double height;
 
     public Cylinder(double radius, double height) {
@@ -20,6 +22,7 @@ class Cylinder extends Circle {
         this.height = height;
     }
 
+    @Override
     public double getArea() {
         return 2 * Math.PI * radius * height + 2 * super.getArea();
     }
@@ -28,5 +31,10 @@ class Cylinder extends Circle {
 public class InheritancePractice {
     public static void main(String[] args) {
 
+        Circle c = new Circle(3);
+        System.out.println("Area of Circle: " + c.getArea());
+
+        Cylinder cy = new Cylinder(3, 4);
+        System.out.println("Area of Cylinder: " + cy.getArea());
     }
 }

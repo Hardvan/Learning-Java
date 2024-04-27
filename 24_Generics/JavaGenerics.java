@@ -1,13 +1,14 @@
 import java.util.ArrayList;
 
 // ? Java Generics
-// * Generics are used to specify the type of data that a class or a method can work with
+// * Used to specify the type of data that a class or a method can work with
 // * Generic data types cannot be primitive types (int, char, etc.)
 // * Generic data types can be any type of class (String, Integer, etc.)
 
 // Generic class
 class MyGeneric<T1, T2> {
 
+    // Attributes
     int val = 123;
     private T1 t1; // Generic data type
     private T2 t2;
@@ -45,7 +46,6 @@ class MyGeneric<T1, T2> {
     public void setT2(T2 t2) {
         this.t2 = t2;
     }
-
 }
 
 public class JavaGenerics {
@@ -65,13 +65,12 @@ public class JavaGenerics {
         list.add(1);
         list.add(2);
 
-        System.out.println(list.get(0));
+        System.out.println("Element at index 0: " + list.get(0));
 
         // Generic Class
         MyGeneric<String, Float> obj = new MyGeneric<>(123456789, "Hello", 1.23f);
         System.out.println("val: " + obj.getVal());
         System.out.println("t1: " + obj.getT1());
         System.out.println("t2: " + obj.getT2());
-
     }
 }

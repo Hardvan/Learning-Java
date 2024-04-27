@@ -1,4 +1,3 @@
-
 // import java.util.Scanner;
 import java.util.*; // import all the classes in the util package (Not recommended)
 

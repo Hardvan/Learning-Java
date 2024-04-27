@@ -25,7 +25,6 @@ abstract class Parent {
 
     // Abstract method
     abstract public void greet(); // or public abstract void greet(); --> Preferred
-
 }
 
 class Child extends Parent {
@@ -34,7 +33,6 @@ class Child extends Parent {
     public void greet() {
         System.out.println("Good Morning");
     }
-
 }
 
 abstract class Child2 extends Parent {
@@ -42,18 +40,19 @@ abstract class Child2 extends Parent {
     public void th() {
         System.out.println("Good Morning");
     }
+
+    // Does not need to override greet() method as Child2 is also an abstract class
 }
 
 public class Abstract {
     public static void main(String[] args) {
 
-        // Parent p = new Parent(); // Error because Parent is abstract class
+        // Parent p = new Parent(); // Error: because Parent is abstract class
 
         Child c = new Child();
         c.greet(); // Good Morning
         System.out.println(c.a);
 
-        // Child2 c2 = new Child2(); // Error because Child2 is abstract class
-
+        // Child2 c2 = new Child2(); // Error: because Child2 is abstract class
     }
 }

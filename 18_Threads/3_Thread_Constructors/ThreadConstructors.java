@@ -1,4 +1,3 @@
-
 class MyThread extends Thread {
 
     // Constructor
@@ -8,11 +7,8 @@ class MyThread extends Thread {
 
     @Override
     public void run() {
-        // while (true) {
         System.out.println("Thread is running");
-        // }
     }
-
 }
 
 public class ThreadConstructors {
@@ -24,7 +20,5 @@ public class ThreadConstructors {
 
         System.out.println("Thread ID: " + t.getId());
         System.out.println("Thread Name: " + t.getName());
-
     }
-
 }

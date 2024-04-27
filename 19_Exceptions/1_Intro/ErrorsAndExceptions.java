@@ -4,14 +4,11 @@
 // * Two types:
 // ? 1) Checked Exceptions
 // * Exceptions that are checked by the compiler at compile time.
+// Eg: IOException, SQLException, ClassNotFoundException
 
 // ? 2) Unchecked Exceptions (Runtime Exceptions)
 // * Exceptions that are not checked by the compiler at compile time.
-
-// * Examples of Exceptions:
-// NullPointerException
-// ArithmeticException
-// ArrayIndexOutOfBoundsException
+// Eg: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException
 
 public class ErrorsAndExceptions {
     public static void main(String[] args) {
@@ -23,6 +20,6 @@ public class ErrorsAndExceptions {
         // ? 2) Logical Errors
 
         // ? 3) Runtime Errors (Exceptions)
-        // int a = 10 / 0; // ArithmeticException: / by zero
+        int a = 10 / 0; // ArithmeticException: / by zero
     }
 }

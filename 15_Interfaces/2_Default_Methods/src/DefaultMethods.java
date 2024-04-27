@@ -9,7 +9,7 @@ interface Camera {
     void recordVideo();
 
     // Private Method (Cannot be called from outside the interface)
-    private void greet() { // Usefull for code reusability in default methods
+    private void greet() { // Useful for code reusability in default methods
         System.out.println("Good Morning");
     }
 
@@ -18,7 +18,6 @@ interface Camera {
         greet();
         System.out.println("Recording in 4K...");
     }
-
 }
 
 interface WiFi {
@@ -37,7 +36,6 @@ class CellPhone {
     void pickCall() {
         System.out.println("Connecting...");
     }
-
 }
 
 class SmartPhone extends CellPhone implements Camera, WiFi {
@@ -63,7 +61,6 @@ class SmartPhone extends CellPhone implements Camera, WiFi {
     public void connectToNetwork(String network) {
         System.out.println("Connecting to " + network);
     }
-
 }
 
 public class DefaultMethods {

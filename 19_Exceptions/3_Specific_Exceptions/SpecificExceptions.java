@@ -20,19 +20,17 @@ public class SpecificExceptions {
             System.out.println("The value at array index " + index + " is " + arr[index]);
             arr[index] = num;
             System.out.println("The value at array index " + index + " is now " + arr[index]);
-
         } catch (ArithmeticException e) {
-            System.out.println("Arithmetic Exception occured.");
+            System.out.println("Arithmetic Exception occurred.");
             System.out.println(e);
-
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("ArrayIndexOutOfBoundsException occured.");
+            System.out.println("ArrayIndexOutOfBoundsException occurred.");
             System.out.println(e);
-
         } catch (Exception e) {
-            System.out.println("Some exception occured.");
+            System.out.println("Some exception occurred.");
             System.out.println(e);
         }
 
+        sc.close();
     }
 }

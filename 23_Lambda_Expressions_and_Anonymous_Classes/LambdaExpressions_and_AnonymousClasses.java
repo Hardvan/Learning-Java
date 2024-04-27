@@ -6,17 +6,17 @@
 // * Used to implement a base class without giving it a name.
 
 interface DemoAno {
-    void meth1();
+    void fun1();
 
-    void meth2();
+    void fun2();
 }
 
 interface DemoAno2 {
-    void meth1();
+    void fun1();
 }
 
 interface DemoAno3 {
-    void meth1(int a);
+    void fun1(int a);
 }
 
 class AnonymousClass implements DemoAno {
@@ -26,13 +26,13 @@ class AnonymousClass implements DemoAno {
     }
 
     @Override
-    public void meth1() {
-        System.out.println("I am meth1");
+    public void fun1() {
+        System.out.println("I am fun1");
     }
 
     @Override
-    public void meth2() {
-        System.out.println("I am meth2");
+    public void fun2() {
+        System.out.println("I am fun2");
     }
 
 }
@@ -43,37 +43,37 @@ public class LambdaExpressions_and_AnonymousClasses {
 
         // AnonymousClass ano = new AnonymousClass(); // Normal way
         // ano.display();
-        // ano.meth1();
-        // ano.meth2();
+        // ano.fun1();
+        // ano.fun2();
 
-        DemoAno obj = new DemoAno() { // Anonymous Class
+        // ? Anonymous Class
+        DemoAno obj = new DemoAno() {
 
             @Override
-            public void meth1() {
-                System.out.println("I am meth1");
+            public void fun1() {
+                System.out.println("I am fun1");
             }
 
             @Override
-            public void meth2() {
-                System.out.println("I am meth2");
+            public void fun2() {
+                System.out.println("I am fun2");
             }
         };
-        obj.meth1();
-        obj.meth2();
+        obj.fun1();
+        obj.fun2();
 
-        // Lambda Expressions
+        // ? Lambda Expressions
 
         // No parameters
         DemoAno2 obj2 = () -> { // Only for single method interfaces (functional interfaces)
-            System.out.println("I am meth1");
+            System.out.println("I am fun1");
         };
-        obj2.meth1();
+        obj2.fun1();
 
         // With parameters
         DemoAno3 obj3 = (a) -> {
-            System.out.println("I am meth1" + a);
+            System.out.println("I am fun1, a = " + a);
         };
-        obj3.meth1(5);
-
+        obj3.fun1(5);
     }
 }

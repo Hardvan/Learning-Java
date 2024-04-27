@@ -8,22 +8,22 @@ public class MyArrayDeque {
     public static void main(String[] args) {
 
         // ? ArrayDeque
-        ArrayDeque<Integer> ad1 = new ArrayDeque<>();
+        ArrayDeque<Integer> ad = new ArrayDeque<>();
 
-        ad1.add(10);
-        ad1.addFirst(5);
-
-        System.out.println(ad1); // [5, 10]
+        System.out.println("=== add() and addFirst() ===");
+        ad.add(10);
+        ad.addFirst(5);
+        System.out.println(ad); // [5, 10]
 
         // * .getFirst() and .getLast()
-        System.out.println(ad1.getFirst()); // 5
-        System.out.println(ad1.getLast()); // 10
+        System.out.println("=== getFirst() and getLast() ===");
+        System.out.println("First element: " + ad.getFirst()); // "First element: 5"
+        System.out.println("Last element: " + ad.getLast()); // "Last element: 10"
 
         // * .removeFirst() and .removeLast()
-        ad1.removeFirst();
-        ad1.removeLast();
-
-        System.out.println(ad1); // []
-
+        System.out.println("=== removeFirst() and removeLast() ===");
+        ad.removeFirst();
+        ad.removeLast();
+        System.out.println(ad); // []
     }
 }

@@ -24,15 +24,13 @@ class SmartPhone extends Phone {
     void showConfig() {
         System.out.println("Config is 4GB RAM, 64GB ROM");
     }
-
 }
 
 @FunctionalInterface
 interface MyFunctionalInterface {
 
     void sayHello();
-    // void sayHi(); // This will give error
-
+    // void sayHi(); // Error as it will have more than one abstract method
 }
 
 public class JavaAnnotations {
@@ -43,6 +41,5 @@ public class JavaAnnotations {
 
         sp.showTime();
         sp.showConfig(); // This method is deprecated
-
     }
 }

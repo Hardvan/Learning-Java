@@ -1,4 +1,3 @@
-
 interface Camera {
 
     void takeSnap();
@@ -62,8 +61,9 @@ public class PolymorphismInInterfaces {
     public static void main(String[] args) {
 
         Camera cam1 = new SmartPhone(); // Can use Camera methods ONLY
+        cam1.takeSnap(); // Allowed
+        cam1.recordVideo(); // Allowed
         cam1.record4KVideo(); // Allowed
         // cam1.getNetworks(); // Not allowed
-
     }
 }

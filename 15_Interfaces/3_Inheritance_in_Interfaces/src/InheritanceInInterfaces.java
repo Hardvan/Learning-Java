@@ -1,42 +1,41 @@
+interface SampleInterface {
 
-interface sampleInterface {
+    void fun1();
 
-    void meth1();
-
-    void meth2();
+    void fun2();
 }
 
 // Interface can extend another interface (Inheritance in Interfaces)
 // Interface cannot implement another interface
-interface childSampleInterface extends sampleInterface {
+interface ChildSampleInterface extends SampleInterface {
 
-    void meth3();
+    void fun3();
 
-    void meth4();
+    void fun4();
 }
 
-// class A extends sampleInterface // Error: Class can't extend interface
+// class A extends SampleInterface // Error: Class can't extend interface
 
-class MySampleClass implements childSampleInterface {
+class MySampleClass implements ChildSampleInterface {
 
     @Override
-    public void meth1() {
-        System.out.println("meth1");
+    public void fun1() {
+        System.out.println("fun1");
     }
 
     @Override
-    public void meth2() {
-        System.out.println("meth2");
+    public void fun2() {
+        System.out.println("fun2");
     }
 
     @Override
-    public void meth3() {
-        System.out.println("meth3");
+    public void fun3() {
+        System.out.println("fun3");
     }
 
     @Override
-    public void meth4() {
-        System.out.println("meth4");
+    public void fun4() {
+        System.out.println("fun4");
     }
 }
 
@@ -45,9 +44,9 @@ public class InheritanceInInterfaces {
 
         MySampleClass obj = new MySampleClass();
 
-        obj.meth1();
-        obj.meth2();
-        obj.meth3();
-        obj.meth4();
+        obj.fun1();
+        obj.fun2();
+        obj.fun3();
+        obj.fun4();
     }
 }

@@ -1,53 +1,83 @@
 import java.util.ArrayList;
 
 public class MyArrayList {
+
+    public static void display(ArrayList<Integer> lst) {
+        for (int a : lst) {
+            System.out.print(a + " ");
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
 
         // ? ArrayList
-        ArrayList<Integer> list = new ArrayList<>();
-        ArrayList<Integer> list2 = new ArrayList<>(10); // Initial capacity
+        ArrayList<Integer> lst = new ArrayList<>();
+        ArrayList<Integer> lst2 = new ArrayList<>(10); // Initial capacity
 
         // This is a generics class (like C++ templates)
 
         // ? Methods
 
         // * .add()
-        list.add(10);
-        list.add(20);
-        list.add(30);
-        list.add(2, 25);
+        System.out.println("=== add() ===");
+        lst.add(10);
+        lst.add(20);
+        lst.add(30);
+        lst.add(2, 25);
+        System.out.println("List 1:");
+        display(lst); // 10 20 25 30
 
-        list2.add(100);
-        list2.add(200);
+        lst2.add(100);
+        lst2.add(200);
+        System.out.println("List 2:");
+        display(lst2); // 100 200
 
         // * .addAll()
-        list.addAll(list2); // Adds at the end
+        System.out.println("\n=== addAll() ===");
+        lst.addAll(lst2); // Adds at the end
+        System.out.println("List 1:");
+        display(lst); // 10 20 25 30 100 200
 
-        System.out.println(list); // [10, 20, 25, 30, 100, 200]
-        // OR
         // * .size() and .get()
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i) + " ");
+        System.out.println("\n=== size() and get() ===");
+        for (int i = 0; i < lst.size(); i++) {
+            System.out.print(lst.get(i) + " ");
         }
+        System.out.println();
 
         // * clear()
-        list2.clear(); // Removes all elements
+        System.out.println("\n=== clear() ===");
+        lst2.clear(); // Removes all elements
+        System.out.println("List 2:");
+        display(lst2); // Empty
 
         // * .contains()
-        boolean isPresent = list.contains(25); // true
-        System.out.println(isPresent);
+        System.out.println("\n=== contains() ===");
+        boolean isPresent = lst.contains(25); // true
+        System.out.println("Is 25 present? " + isPresent); // "Is 25 present? true
 
         // * .indexOf()
-        int index = list.indexOf(25); // 2
+        System.out.println("\n=== indexOf() ===");
+        int index = lst.indexOf(25); // 2
+        System.out.println("Index of 25: " + index); // "Index of 25: 2
 
         // * .isEmpty()
-        boolean isEmpty = list.isEmpty(); // false
+        System.out.println("\n=== isEmpty() ===");
+        boolean isEmpty = lst.isEmpty(); // false
+        System.out.println("Is lst empty? " + isEmpty); // "Is lst empty? false
 
         // * .remove()
-        list.remove(2); // Removes element at index 2
+        System.out.println("\n=== remove() ===");
+        System.out.println("Removing element at index 2");
+        lst.remove(2);
+        System.out.println("List 1:");
+        display(lst); // 10 20 30 100 200
 
         // * .set()
-        list.set(2, 50); // Replaces element at index 2 with 50
-
+        System.out.println("\n=== set() ===");
+        System.out.println("Replacing element at index 2 with 50");
+        lst.set(2, 50);
+        display(lst); // 10 20 50 30 100 200
     }
 }
