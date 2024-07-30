@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 
 public class FileHandling {
     public static void main(String[] args) {
-
         String fileName = "hello.txt";
 
         // ? Creating a new file using File class
@@ -52,9 +51,18 @@ public class FileHandling {
 
         // ? Deleting a file
         File file3 = new File(fileName);
-        if (file3.delete())
-            System.out.println("File deleted successfully");
-        else
-            System.out.println("Unable to delete file");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Do you want to delete the file? (y/n): ");
+        String choice = sc.next();
+        if (choice.equals("y")) {
+            boolean deleted = file3.delete();
+            if (deleted) {
+                System.out.println("File deleted successfully");
+            } else {
+                System.out.println("Unable to delete file");
+            }
+        }
+
+        sc.close();
     }
 }

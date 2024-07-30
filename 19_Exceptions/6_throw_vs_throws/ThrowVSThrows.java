@@ -1,5 +1,4 @@
 class NegativeRadiusException extends Exception {
-
     @Override
     public String toString() {
         return "Radius cannot be negative.";
@@ -12,7 +11,6 @@ class NegativeRadiusException extends Exception {
 }
 
 public class ThrowVSThrows {
-
     // ? throws keyword
     // Indicates that the method may throw an exception
     public static int divide(int a, int b) throws ArithmeticException {
@@ -20,14 +18,14 @@ public class ThrowVSThrows {
     }
 
     public static double area(double radius) throws NegativeRadiusException {
-        if (radius < 0)
+        if (radius < 0) {
             throw new NegativeRadiusException(); // ? throw keyword
+        }
 
         return Math.PI * radius * radius;
     }
 
     public static void main(String[] args) {
-
         try {
             int c = divide(10, 0);
             System.out.println(c);

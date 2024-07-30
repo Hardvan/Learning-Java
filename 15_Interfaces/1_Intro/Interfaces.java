@@ -9,11 +9,10 @@
 
 // Interface
 interface Bicycle {
-
     int a = 10; // You can create properties in interface, but not modify them (final)
-    // Variables are public, static, final by default in interface
+    // * Interface variables are public, static, final by default
 
-    // Interface methods are public, abstract by default
+    // * Interface methods are public, abstract by default
     void applyBrake(int decrement);
 
     void speedUp(int increment);
@@ -25,9 +24,8 @@ interface Horn {
 
 // implements keyword
 class Hero implements Bicycle, Horn {
-
     int speed = 0; // Initial speed
-    int a = 20; // Modifying a is allowed in subclass
+    int a = 20; // Modifying 'a' is allowed in subclass
 
     @Override
     public void applyBrake(int decrement) {
@@ -51,7 +49,6 @@ class Hero implements Bicycle, Horn {
 
 public class Interfaces {
     public static void main(String[] args) {
-
         Hero h = new Hero();
 
         System.out.println("a: " + h.a);

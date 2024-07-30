@@ -20,7 +20,6 @@ interface DemoAno3 {
 }
 
 class AnonymousClass implements DemoAno {
-
     public void display() {
         System.out.println("Anonymous Class");
     }
@@ -34,13 +33,10 @@ class AnonymousClass implements DemoAno {
     public void fun2() {
         System.out.println("I am fun2");
     }
-
 }
 
 public class LambdaExpressions_and_AnonymousClasses {
-
     public static void main(String[] args) {
-
         // AnonymousClass ano = new AnonymousClass(); // Normal way
         // ano.display();
         // ano.fun1();
@@ -48,7 +44,6 @@ public class LambdaExpressions_and_AnonymousClasses {
 
         // ? Anonymous Class
         DemoAno obj = new DemoAno() {
-
             @Override
             public void fun1() {
                 System.out.println("I am fun1");

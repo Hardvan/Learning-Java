@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 public class MyArrayList {
-
     public static void display(ArrayList<Integer> lst) {
         for (int a : lst) {
             System.out.print(a + " ");
@@ -10,7 +9,6 @@ public class MyArrayList {
     }
 
     public static void main(String[] args) {
-
         // ? ArrayList
         ArrayList<Integer> lst = new ArrayList<>();
         ArrayList<Integer> lst2 = new ArrayList<>(10); // Initial capacity

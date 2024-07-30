@@ -1,14 +1,12 @@
 interface SampleInterface {
-
     void fun1();
 
     void fun2();
 }
 
-// Interface can extend another interface (Inheritance in Interfaces)
-// Interface cannot implement another interface
+// * Interface can extend another interface (Inheritance in Interfaces)
+// * Interface cannot implement another interface
 interface ChildSampleInterface extends SampleInterface {
-
     void fun3();
 
     void fun4();
@@ -17,7 +15,6 @@ interface ChildSampleInterface extends SampleInterface {
 // class A extends SampleInterface // Error: Class can't extend interface
 
 class MySampleClass implements ChildSampleInterface {
-
     @Override
     public void fun1() {
         System.out.println("fun1");
@@ -41,7 +38,6 @@ class MySampleClass implements ChildSampleInterface {
 
 public class InheritanceInInterfaces {
     public static void main(String[] args) {
-
         MySampleClass obj = new MySampleClass();
 
         obj.fun1();

@@ -1,10 +1,9 @@
 // ? Creating Threads
 // * Two ways:
-// * 1) Extend Thread class
-// * 2) Implement Runnable interface
+// * 1) extend Thread class
+// * 2) implement Runnable interface
 
 class MyThread1 extends Thread {
-
     @Override
     public void run() { // run() is a method of Thread class
         while (true) {
@@ -15,7 +14,6 @@ class MyThread1 extends Thread {
 }
 
 class MyThread2 extends Thread {
-
     @Override
     public void run() {
         while (true) {
@@ -26,14 +24,18 @@ class MyThread2 extends Thread {
 }
 
 public class CreatingThreads {
-
     public static void main(String[] args) {
-
         MyThread1 t1 = new MyThread1();
         MyThread2 t2 = new MyThread2();
 
         // start() is a method of Thread class
         t1.start();
         t2.start();
+
+        // main thread
+        while (true) {
+            System.out.println("Main Thread is Running.");
+            System.out.println("I am busy!");
+        }
     }
 }

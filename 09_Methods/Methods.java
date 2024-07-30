@@ -3,8 +3,9 @@ public class Methods {
     // ? DRY: Don't Repeat Yourself
 
     // ? Static keyword
-    // * Associate a method with the class itself rather than the object.
-    // * Static method in a class is shared by all objects of that class
+    // * Associate a method/variable with the class itself rather than the object.
+    // * Static method/variable in a class is shared by all objects of that class
+    // * Called by class name, not by object reference
 
     // ? We can call only static methods from another static method (like main)
     static int add(int a, int b) {
@@ -16,7 +17,6 @@ public class Methods {
     }
 
     public static void main(String[] args) {
-
         // Static method invocation
         int a = 1;
         int b = 2;
@@ -29,6 +29,5 @@ public class Methods {
         Methods obj = new Methods();
         int diff = obj.sub(a, b);
         System.out.println("Difference of " + a + " and " + b + " is " + diff);
-
     }
 }

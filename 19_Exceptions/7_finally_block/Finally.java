@@ -1,10 +1,10 @@
-// finally block is used to
-// 1. Close resources
-// 2. Close connections
-
 public class Finally {
-    public static void main(String[] args) {
 
+    // finally block is used to:
+    // 1. Close resources
+    // 2. Close connections
+
+    public static void main(String[] args) {
         try {
             int c = 10 / 0;
             System.out.println(c);

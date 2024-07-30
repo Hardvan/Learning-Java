@@ -6,7 +6,6 @@ import java.util.ArrayDeque;
 
 public class MyArrayDeque {
     public static void main(String[] args) {
-
         // ? ArrayDeque
         ArrayDeque<Integer> ad = new ArrayDeque<>();
 

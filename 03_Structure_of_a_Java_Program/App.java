@@ -1,9 +1,10 @@
+package com.company;
+
 /*
     ? Package
     A package in Java is used to group related classes.
     Think of it as a folder in a file directory.
 */
-package com.company;
 
 /*
     ? Class
@@ -29,23 +30,23 @@ package com.company;
     * {
     * Main Method Definition
     * }
- */
+*/
 
 /*
  ? Data Types
     * Primitive Data Types
         * Integer Types
-            * byte
-            * short
-            * int
-            * long
+            * byte  (1 byte)
+            * short (2 bytes)
+            * int   (4 bytes)
+            * long  (8 bytes)
         * Floating Point Types
-            * float
-            * double
+            * float     (4 bytes)
+            * double    (8 bytes)
         * Character Type
-            * char
+            * char  (2 bytes)
         * Boolean Type
-            * boolean
+            * boolean   (1 byte, but 1 bit is used)
     * Non-Primitive Data Types
         * String
         * Arrays
@@ -57,8 +58,7 @@ package com.company;
  */
 
 public class App {
-    public static void main(String[] args) // main() method is the entry point of the program
-    {
-        System.out.println("Hello World!");
+    public static void main(String[] args) { // main() method is the entry point of the program
+        System.out.println("Hello, World!");
     }
 }

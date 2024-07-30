@@ -1,10 +1,9 @@
 // ? Method Overriding
 // * Occurs when a child class has the same method as the parent class
 // * Runtime (Dynamic) Polymorphism
-// * Arguments and return type must be the same
+// * Arguments and return type MUST BE THE SAME
 
 class A {
-
     public int a;
 
     public int fun1() {
@@ -17,7 +16,6 @@ class A {
 }
 
 class B extends A {
-
     // @Override: Indicates that a method declaration is intended to override a
     // method declaration in a supertype.
     // Useful for clarifying overriding methods
@@ -33,7 +31,6 @@ class B extends A {
 
 public class MethodOverriding {
     public static void main(String[] args) {
-
         A a = new A();
         System.out.println("Calling method 2 of class A:");
         a.fun2(); // Method 2 of class A

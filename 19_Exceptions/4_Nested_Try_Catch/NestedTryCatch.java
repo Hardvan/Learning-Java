@@ -1,8 +1,6 @@
 public class NestedTryCatch {
     public static void main(String[] args) {
-
         int[] arr = new int[5];
-
         try {
             System.out.println("You are in level 1");
             try {

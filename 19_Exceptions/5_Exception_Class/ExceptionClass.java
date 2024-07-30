@@ -1,5 +1,5 @@
+// Custom Exception Class
 class MyException extends Exception {
-
     @Override
     public String toString() {
         return "I am toString()";
@@ -13,7 +13,6 @@ class MyException extends Exception {
 
 public class ExceptionClass {
     public static void main(String[] args) {
-
         int a = 10;
         if (a < 100) {
             try {

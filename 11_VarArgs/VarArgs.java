@@ -11,13 +11,12 @@ public class VarArgs {
         return result;
     }
 
-    // Atleast one argument is required
+    // Atleast one argument is required (int x)
     static void fun(int x, int... arr) {
         return;
     }
 
     public static void main(String[] args) {
-
         int result = sum(1, 2, 3, 4, 5);
         System.out.println("Sum: " + result);
 

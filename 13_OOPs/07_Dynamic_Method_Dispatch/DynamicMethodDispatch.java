@@ -1,5 +1,4 @@
 class Phone {
-
     public void showTime() {
         System.out.println("Time is 10:00 AM");
     }
@@ -10,7 +9,6 @@ class Phone {
 }
 
 class SmartPhone extends Phone {
-
     public void music() {
         System.out.println("Playing music...");
     }
@@ -19,7 +17,6 @@ class SmartPhone extends Phone {
     public void on() {
         System.out.println(("Smartphone turning on..."));
     }
-
 }
 
 public class DynamicMethodDispatch {

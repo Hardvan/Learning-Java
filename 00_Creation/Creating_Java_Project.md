@@ -1,4 +1,4 @@
-# Creating a Java Project
+# Creating a Java Project in VSCode
 
 1. Ctrl+Shift+P to open the command palette
 2. Type Java: Create Java Project

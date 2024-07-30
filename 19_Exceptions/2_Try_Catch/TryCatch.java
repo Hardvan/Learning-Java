@@ -1,6 +1,5 @@
 public class TryCatch {
     public static void main(String[] args) {
-
         int a = 12345;
         int b = 0;
         int c;

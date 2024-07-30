@@ -9,8 +9,10 @@
 
 class Base {
 
+    // Attributes
     int x;
 
+    // Constructors
     Base() {
         System.out.println("I am a default constructor in Base class");
     }
@@ -20,6 +22,7 @@ class Base {
         this.x = x;
     }
 
+    // Methods
     public void setX(int x) {
         this.x = x;
     }
@@ -36,8 +39,10 @@ class Base {
 // ? Derived Class
 class Derived extends Base {
 
+    // Attributes
     int y;
 
+    // Constructors
     Derived() {
         System.out.println("I am a default constructor in Derived class");
     }
@@ -48,6 +53,7 @@ class Derived extends Base {
         this.y = y;
     }
 
+    // Methods
     public void setY(int y) {
         this.y = y;
     }
@@ -59,7 +65,6 @@ class Derived extends Base {
 
 public class Inheritance {
     public static void main(String[] args) {
-
         System.out.println("=== Base Class ===");
         Base b = new Base();
         b.setX(10);
@@ -67,8 +72,12 @@ public class Inheritance {
 
         System.out.println("\n=== Derived Class ===");
         Derived d = new Derived();
+        // * Constructor Order:
         // First Base Constructor is called
         // Then Derived Constructor is called
+        // * Destructor Order:
+        // First Derived Destructor is called
+        // Then Base Destructor is called
 
         d.setX(20);
         d.setY(30);

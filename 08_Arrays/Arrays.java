@@ -7,11 +7,11 @@ public class Arrays {
         int[] arr = new int[5]; // Declaration & Memory Allocation
 
         // Method 2
-        int[] arr2; // Declaration
-        arr2 = new int[5]; // Memory Allocation
+        int[] arr2;         // Declaration
+        arr2 = new int[5];  // Memory Allocation
 
         // Method 3
-        int[] arr3 = { 1, 2, 3, 4, 5 }; // Declaration & Initialization
+        int[] arr3 = {1, 2, 3, 4, 5}; // Declaration & Initialization
 
         // Assigning values to the array
         arr[0] = 1;

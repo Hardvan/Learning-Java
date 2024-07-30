@@ -9,7 +9,6 @@
 // * World: Refers to all classes in the world
 
 class C1 {
-
     public int x = 5;
     protected int y = 6;
     int z = 7; // default
@@ -19,7 +18,6 @@ class C1 {
 
 public class access_modifiers {
     public static void main(String[] args) {
-
         C1 c = new C1();
 
         System.out.println(c.x);

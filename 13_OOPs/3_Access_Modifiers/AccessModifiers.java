@@ -1,13 +1,13 @@
-// ? Access Modifier
-// * Specifies where the class, method, or field can be accessed
-
-// * Four types
-// * private - within the declared class
-// * protected - within the declared class and subclasses
-// * default - within the declared class and package
-// * public - accessible from anywhere
-
 class MyEmployee {
+
+    // ? Access Modifier
+    // * Specifies where the class, method, or field can be accessed
+
+    // * Four types
+    // * private - within the declared class
+    // * protected - within the declared class & subclasses
+    // * default - within the declared class & package
+    // * public - accessible from anywhere
 
     // ? Private variables
     private int id;
@@ -30,12 +30,10 @@ class MyEmployee {
     public String getName() {
         return name;
     }
-
 }
 
 public class AccessModifiers {
     public static void main(String[] args) {
-
         MyEmployee emp = new MyEmployee();
 
         // Error due to private access modifier

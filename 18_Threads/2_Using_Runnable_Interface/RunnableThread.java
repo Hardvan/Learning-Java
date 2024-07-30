@@ -1,5 +1,4 @@
 class MyThreadRunnable1 implements Runnable {
-
     @Override
     public void run() {
         while (true) {
@@ -9,7 +8,6 @@ class MyThreadRunnable1 implements Runnable {
 }
 
 class MyThreadRunnable2 implements Runnable {
-
     @Override
     public void run() {
         while (true) {
@@ -20,10 +18,9 @@ class MyThreadRunnable2 implements Runnable {
 
 public class RunnableThread {
     public static void main(String[] args) {
-
         // ? Bullet & Gun Analogy:
-        // Bullet(runnable) by itself cannot shoot
-        // We need a gun(thread) to shoot the bullet(runnable)
+        // Bullet (runnable) by itself cannot shoot
+        // We need a gun (thread) to shoot the bullet(runnable)
 
         MyThreadRunnable1 bullet1 = new MyThreadRunnable1();
         Thread gun1 = new Thread(bullet1);
@@ -33,5 +30,9 @@ public class RunnableThread {
 
         gun1.start();
         gun2.start();
+
+        while (true) {
+            System.out.println("Main Thread is Running.");
+        }
     }
 }

@@ -3,7 +3,6 @@
 // * Without breaking the existing code
 
 interface Camera {
-
     void takeSnap();
 
     void recordVideo();
@@ -21,14 +20,12 @@ interface Camera {
 }
 
 interface WiFi {
-
     String[] getNetworks();
 
     void connectToNetwork(String network);
 }
 
 class CellPhone {
-
     void callNumber(int phoneNo) {
         System.out.println("Calling " + phoneNo);
     }
@@ -39,7 +36,6 @@ class CellPhone {
 }
 
 class SmartPhone extends CellPhone implements Camera, WiFi {
-
     public void takeSnap() {
         System.out.println("Taking snap");
     }
@@ -49,12 +45,12 @@ class SmartPhone extends CellPhone implements Camera, WiFi {
     }
 
     // public void record4KVideo() {
-    // System.out.println("Recording in 4K in smart phone...");
+    // System.out.println("Recording in 4K in smartphone...");
     // }
 
     public String[] getNetworks() {
         System.out.println("Getting list of networks");
-        String[] networkList = { "ABC", "DEF", "GHI" };
+        String[] networkList = {"ABC", "DEF", "GHI"};
         return networkList;
     }
 
@@ -65,15 +61,14 @@ class SmartPhone extends CellPhone implements Camera, WiFi {
 
 public class DefaultMethods {
     public static void main(String[] args) {
-
         SmartPhone sp = new SmartPhone();
 
         String[] arr = sp.getNetworks();
-        for (String item : arr)
+        for (String item : arr) {
             System.out.println(item);
+        }
 
         sp.record4KVideo();
         // sp.greet(); // Private method cannot be called from outside the interface
-
     }
 }

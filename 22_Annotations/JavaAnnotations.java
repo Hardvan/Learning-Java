@@ -14,7 +14,6 @@ class Phone {
 }
 
 class SmartPhone extends Phone {
-
     @Override
     void showTime() {
         System.out.println("Time is 8:20 AM");
@@ -28,7 +27,6 @@ class SmartPhone extends Phone {
 
 @FunctionalInterface
 interface MyFunctionalInterface {
-
     void sayHello();
     // void sayHi(); // Error as it will have more than one abstract method
 }
@@ -36,7 +34,6 @@ interface MyFunctionalInterface {
 public class JavaAnnotations {
     @SuppressWarnings("deprecation") // To suppress warnings from compiler
     public static void main(String[] args) {
-
         SmartPhone sp = new SmartPhone();
 
         sp.showTime();

@@ -3,17 +3,17 @@
 
 /**
  * This class is used to demonstrate hello world program in java.
- * 
+ *
  * @author Hardvan (Hardik)
  * @version 1.0
+ * @see <a href="https://www.github.com/Hardvan">Hardvan's GitHub</a>
  * @since 2023
- * @see Java Docs
  */
 public class MyJavaDoc {
 
     /**
      * This method is used to add two numbers.
-     * 
+     *
      * @param a
      * @param b
      * @return int

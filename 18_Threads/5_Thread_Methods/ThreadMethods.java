@@ -1,5 +1,4 @@
 class MyThr1 extends Thread {
-
     @Override
     public void run() {
         int i = 0;
@@ -8,8 +7,12 @@ class MyThr1 extends Thread {
             // Sleep for 455 ms
             try {
                 Thread.sleep(455); // ? .Thread.sleep()
+                if (i == 10) {
+                    throw new InterruptedException();
+                }
             } catch (InterruptedException e) {
                 System.out.println(e);
+                break;
             }
             i++;
         }
@@ -17,7 +20,6 @@ class MyThr1 extends Thread {
 }
 
 class MyThr2 extends Thread {
-
     @Override
     public void run() {
         while (true) {
@@ -27,9 +29,7 @@ class MyThr2 extends Thread {
 }
 
 public class ThreadMethods {
-
     public static void main(String[] args) {
-
         MyThr1 t1 = new MyThr1();
         MyThr2 t2 = new MyThr2();
 

@@ -50,7 +50,6 @@ class MyGeneric<T1, T2> {
 
 public class JavaGenerics {
     public static void main(String[] args) {
-
         // If we do
         // * ArrayList list = new ArrayList();
         // then we can add any type of data in it

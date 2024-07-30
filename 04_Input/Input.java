@@ -13,7 +13,7 @@ public class Input {
         System.out.println("=== Reading an integer ===");
         System.out.print("Enter a number: ");
         boolean isInt = sc.hasNextInt();// Checking if the input is an integer
-        System.out.println("Is the input an integer? " + isInt);
+        System.out.println("Is the input an integer: " + isInt);
         if (isInt) {
             int number = sc.nextInt();
             System.out.println("You entered: " + number);
@@ -23,12 +23,11 @@ public class Input {
 
         // Getting a string
         System.out.println("\n=== Reading a string ===");
-        System.out.print("Enter a string: ");
+        System.out.print("Enter a string (single word): ");
         String str = sc.next(); // Reads only one word
         System.out.println("You entered: " + str);
 
-        // Consume \n from previous input
-        sc.nextLine();
+        sc.nextLine();  // Consume \n from previous input
 
         // Getting a line
         System.out.println("\n=== Reading a line ===");

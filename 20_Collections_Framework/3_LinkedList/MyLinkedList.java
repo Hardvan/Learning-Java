@@ -1,7 +1,6 @@
 import java.util.LinkedList;
 
 public class MyLinkedList {
-
     public static void display(LinkedList<Integer> lst) {
         for (int a : lst) {
             System.out.print(a + " ");
@@ -10,7 +9,6 @@ public class MyLinkedList {
     }
 
     public static void main(String[] args) {
-
         // ? LinkedList
         LinkedList<Integer> lst = new LinkedList<>();
         LinkedList<Integer> lst2 = new LinkedList<>();
