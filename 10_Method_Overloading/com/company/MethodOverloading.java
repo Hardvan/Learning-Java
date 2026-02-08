@@ -1,8 +1,9 @@
+package com.company;
+
 public class MethodOverloading {
 
-    // ? Method Overloading
+    // ? Method Overloading (Compile Time (Static) Polymorphism)
     // * Two or more methods having same name but different parameters - Overloaded Methods
-    // * Example of Compile Time (Static) Polymorphism
     // * Return type doesn't matter
 
     static void fun() {

@@ -1,3 +1,5 @@
+package com.company;
+
 public class Methods {
 
     // ? DRY: Don't Repeat Yourself
@@ -8,6 +10,7 @@ public class Methods {
     // * Called by class name, not by object reference
 
     // ? We can call only static methods from another static method (like main)
+    // Reason: Static methods belong to the class, and they can be called without creating an instance of the class. Non-static methods require an instance of the class to be invoked, and since static methods do not have access to instance variables or methods, they cannot directly call non-static methods.
     static int add(int a, int b) {
         return a + b;
     }

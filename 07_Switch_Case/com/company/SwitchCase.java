@@ -1,3 +1,5 @@
+package com.company;
+
 public class SwitchCase {
     public static void main(String[] args) {
         // ? We can use switch case with Strings in Java

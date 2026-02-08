@@ -1,3 +1,5 @@
+package com.company;
+
 public class Strings {
     /*
     ? System.out
@@ -16,8 +18,11 @@ public class Strings {
         String b = new String("Hardvan");
         /*
          * Difference between a & b:
-         * a -> reference variable
-         * b -> object variable
+         * a -> reference variable: points to a string literal in the string pool
+         * b -> object variable: points to a string object in the heap
+         *
+         * String pool: a special memory area where string literals are stored. If a string literal already exists in the pool, it will be reused instead of creating a new object. This is called string interning.
+         * Heap: a memory area where objects are stored. When we create a new string object using the new keyword, it is stored in the heap and not in the string pool.
          */
 
         // ? String Methods

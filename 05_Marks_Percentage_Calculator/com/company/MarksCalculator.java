@@ -1,9 +1,17 @@
+package com.company;
+
 import java.util.Scanner;
 
 public class MarksCalculator {
     public static void main(String[] args) {
-        float marks1, marks2, marks3, marks4, marks5;
-        float total, percentage;
+        float marks1;
+        float marks2;
+        float marks3;
+        float marks4;
+        float marks5;
+
+        float total;
+        float percentage;
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter marks of 5 subjects: ");

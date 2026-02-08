@@ -1,3 +1,5 @@
+package com.company;
+
 public class Arrays {
     public static void main(String[] args) {
 
@@ -26,9 +28,10 @@ public class Arrays {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
+        System.out.println();
 
         // ? For-each loop (like C++)
-        System.out.println("\nArray Elements (For-each loop):");
+        System.out.println("Array Elements (For-each loop):");
         for (int element : arr) {
             System.out.print(element + " ");
         }
